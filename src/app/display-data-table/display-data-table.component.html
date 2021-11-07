@@ -1,0 +1,15 @@
+<div class="search-section">
+<label for="inputText">Search Text: </label>
+<input type="text" (keyup)="onFilter($event)" name="inputText">
+</div>
+
+<div>
+<table>
+  <tr *ngFor="let data of dataTable">
+    <td>
+      {{ data }}
+    </td>
+  </tr>
+</table>
+</div>
+
